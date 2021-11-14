@@ -1,23 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import {Add,Subt,Mult,Div} from "./components/calculation";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ul>
+        <li>Addition of two numbers:{Add(40,80)}</li>
+        <li>Subtraction of two numbers:{Subt(150,40)} </li>
+        <li>Multiplication of two numbers:{Mult(19,19)}</li>
+        <li>Division of two numbers:{Div(20,3)}</li>
+      </ul>
     </div>
   );
 }
